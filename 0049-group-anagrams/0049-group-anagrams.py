@@ -7,7 +7,7 @@ class Solution(object):
             for c in s:
                 alph_hash[ord(c)-ord('a')] += 1
             str_hash[tuple(alph_hash)].append(s)
-        
+
         return list(str_hash.values())
         
 
