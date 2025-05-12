@@ -5,5 +5,6 @@ class Solution(object):
             diff = target - n
             if diff in numHash:
                 return [numHash[diff], i]
-            numHash[n] = i
+            else:
+                numHash[n] = i
         
