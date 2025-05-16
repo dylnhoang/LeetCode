@@ -18,6 +18,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## String
 |  |
 | ------- |
+| [0020-valid-parentheses](https://github.com/dylnhoang/LeetCode/tree/master/0020-valid-parentheses) |
 | [0049-group-anagrams](https://github.com/dylnhoang/LeetCode/tree/master/0049-group-anagrams) |
 | [0125-valid-palindrome](https://github.com/dylnhoang/LeetCode/tree/master/0125-valid-palindrome) |
 | [0271-encode-and-decode-strings](https://github.com/dylnhoang/LeetCode/tree/master/0271-encode-and-decode-strings) |
@@ -59,4 +60,8 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0167-two-sum-ii-input-array-is-sorted](https://github.com/dylnhoang/LeetCode/tree/master/0167-two-sum-ii-input-array-is-sorted) |
+## Stack
+|  |
+| ------- |
+| [0020-valid-parentheses](https://github.com/dylnhoang/LeetCode/tree/master/0020-valid-parentheses) |
 <!---LeetCode Topics End-->
