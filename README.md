@@ -10,6 +10,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0167-two-sum-ii-input-array-is-sorted](https://github.com/dylnhoang/LeetCode/tree/master/0167-two-sum-ii-input-array-is-sorted) |
 | [0271-encode-and-decode-strings](https://github.com/dylnhoang/LeetCode/tree/master/0271-encode-and-decode-strings) |
 | [0347-top-k-frequent-elements](https://github.com/dylnhoang/LeetCode/tree/master/0347-top-k-frequent-elements) |
+| [0792-binary-search](https://github.com/dylnhoang/LeetCode/tree/master/0792-binary-search) |
 ## Hash Table
 |  |
 | ------- |
@@ -64,6 +65,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0167-two-sum-ii-input-array-is-sorted](https://github.com/dylnhoang/LeetCode/tree/master/0167-two-sum-ii-input-array-is-sorted) |
+| [0792-binary-search](https://github.com/dylnhoang/LeetCode/tree/master/0792-binary-search) |
 ## Stack
 |  |
 | ------- |
