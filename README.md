@@ -7,6 +7,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0001-two-sum](https://github.com/dylnhoang/LeetCode/tree/master/0001-two-sum) |
 | [0015-3sum](https://github.com/dylnhoang/LeetCode/tree/master/0015-3sum) |
 | [0049-group-anagrams](https://github.com/dylnhoang/LeetCode/tree/master/0049-group-anagrams) |
+| [0074-search-a-2d-matrix](https://github.com/dylnhoang/LeetCode/tree/master/0074-search-a-2d-matrix) |
 | [0150-evaluate-reverse-polish-notation](https://github.com/dylnhoang/LeetCode/tree/master/0150-evaluate-reverse-polish-notation) |
 | [0167-two-sum-ii-input-array-is-sorted](https://github.com/dylnhoang/LeetCode/tree/master/0167-two-sum-ii-input-array-is-sorted) |
 | [0271-encode-and-decode-strings](https://github.com/dylnhoang/LeetCode/tree/master/0271-encode-and-decode-strings) |
@@ -67,6 +68,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Binary Search
 |  |
 | ------- |
+| [0074-search-a-2d-matrix](https://github.com/dylnhoang/LeetCode/tree/master/0074-search-a-2d-matrix) |
 | [0167-two-sum-ii-input-array-is-sorted](https://github.com/dylnhoang/LeetCode/tree/master/0167-two-sum-ii-input-array-is-sorted) |
 | [0792-binary-search](https://github.com/dylnhoang/LeetCode/tree/master/0792-binary-search) |
 ## Stack
@@ -88,4 +90,8 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0021-merge-two-sorted-lists](https://github.com/dylnhoang/LeetCode/tree/master/0021-merge-two-sorted-lists) |
+## Matrix
+|  |
+| ------- |
+| [0074-search-a-2d-matrix](https://github.com/dylnhoang/LeetCode/tree/master/0074-search-a-2d-matrix) |
 <!---LeetCode Topics End-->
