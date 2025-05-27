@@ -1,21 +1,18 @@
 class Solution(object):
     def checkInclusion(self, s1, s2):
-        size = len(s1)
-
-        if size > len(s2):
+        if len(s1) > len(s2):
             return False
         
-        s1_hash = {c: 0 for c in 'abcdefghijklmnopqrstuvwxyz'}
+        s1_count, s2_count = [0] * 26, [0] * 26
 
-        for c in s1:
-            s1_hash[c] += 1
-
-        for i in range(len(s2)-size + 1):
-            s2_hash = {c: 0 for c in 'abcdefghijklmnopqrstuvwxyz'}
-            for c in s2[i : i + size]:
-                s2_hash[c] += 1
-            if s2_hash == s1_hash:
+        for i in range(len(s1)):
+            s1_count[ord(s1[i]) - ord('a')] += 1
+            s2_count[ord(s2[i]) - ord('a')] += 1
+        
+        for i in range(len(s1), len(s2)):
+            if s1_count == s2_count:
                 return True
+            s2_count[ord(s2[i - len(s1)]) - ord('a')] -= 1
+            s2_count[ord(s2[i]) - ord('a')] += 1
         
-        return False
-        
+        return s1_count == s2_count
