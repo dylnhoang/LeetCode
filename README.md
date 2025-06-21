@@ -35,6 +35,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0003-longest-substring-without-repeating-characters](https://github.com/dylnhoang/LeetCode/tree/master/0003-longest-substring-without-repeating-characters) |
 | [0020-valid-parentheses](https://github.com/dylnhoang/LeetCode/tree/master/0020-valid-parentheses) |
+| [0022-generate-parentheses](https://github.com/dylnhoang/LeetCode/tree/master/0022-generate-parentheses) |
 | [0049-group-anagrams](https://github.com/dylnhoang/LeetCode/tree/master/0049-group-anagrams) |
 | [0125-valid-palindrome](https://github.com/dylnhoang/LeetCode/tree/master/0125-valid-palindrome) |
 | [0271-encode-and-decode-strings](https://github.com/dylnhoang/LeetCode/tree/master/0271-encode-and-decode-strings) |
@@ -126,4 +127,12 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0011-container-with-most-water](https://github.com/dylnhoang/LeetCode/tree/master/0011-container-with-most-water) |
+## Dynamic Programming
+|  |
+| ------- |
+| [0022-generate-parentheses](https://github.com/dylnhoang/LeetCode/tree/master/0022-generate-parentheses) |
+## Backtracking
+|  |
+| ------- |
+| [0022-generate-parentheses](https://github.com/dylnhoang/LeetCode/tree/master/0022-generate-parentheses) |
 <!---LeetCode Topics End-->
