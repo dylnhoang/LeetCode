@@ -17,9 +17,6 @@ class Solution(object):
                 res[stack[-1]] = (i - stack[-1])
                 stack.pop()
             stack.append(i)
-
-        for index in stack:
-            res[index] = 0
         
         return res
 
