@@ -1,8 +1,5 @@
 class Solution(object):
     def minWindow(self, s, t):
-        if t == "":
-            return ""
-
         t_map, window = {}, {}
         res, resLen = [-1, -1], float('inf')
         
