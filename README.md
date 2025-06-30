@@ -16,6 +16,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0167-two-sum-ii-input-array-is-sorted](https://github.com/dylnhoang/LeetCode/tree/master/0167-two-sum-ii-input-array-is-sorted) |
 | [0271-encode-and-decode-strings](https://github.com/dylnhoang/LeetCode/tree/master/0271-encode-and-decode-strings) |
 | [0347-top-k-frequent-elements](https://github.com/dylnhoang/LeetCode/tree/master/0347-top-k-frequent-elements) |
+| [0594-longest-harmonious-subsequence](https://github.com/dylnhoang/LeetCode/tree/master/0594-longest-harmonious-subsequence) |
 | [0739-daily-temperatures](https://github.com/dylnhoang/LeetCode/tree/master/0739-daily-temperatures) |
 | [0792-binary-search](https://github.com/dylnhoang/LeetCode/tree/master/0792-binary-search) |
 | [0907-koko-eating-bananas](https://github.com/dylnhoang/LeetCode/tree/master/0907-koko-eating-bananas) |
@@ -32,6 +33,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0347-top-k-frequent-elements](https://github.com/dylnhoang/LeetCode/tree/master/0347-top-k-frequent-elements) |
 | [0424-longest-repeating-character-replacement](https://github.com/dylnhoang/LeetCode/tree/master/0424-longest-repeating-character-replacement) |
 | [0567-permutation-in-string](https://github.com/dylnhoang/LeetCode/tree/master/0567-permutation-in-string) |
+| [0594-longest-harmonious-subsequence](https://github.com/dylnhoang/LeetCode/tree/master/0594-longest-harmonious-subsequence) |
 ## String
 |  |
 | ------- |
@@ -50,6 +52,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0015-3sum](https://github.com/dylnhoang/LeetCode/tree/master/0015-3sum) |
 | [0049-group-anagrams](https://github.com/dylnhoang/LeetCode/tree/master/0049-group-anagrams) |
 | [0347-top-k-frequent-elements](https://github.com/dylnhoang/LeetCode/tree/master/0347-top-k-frequent-elements) |
+| [0594-longest-harmonious-subsequence](https://github.com/dylnhoang/LeetCode/tree/master/0594-longest-harmonious-subsequence) |
 ## Two Pointers
 |  |
 | ------- |
@@ -75,6 +78,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0347-top-k-frequent-elements](https://github.com/dylnhoang/LeetCode/tree/master/0347-top-k-frequent-elements) |
+| [0594-longest-harmonious-subsequence](https://github.com/dylnhoang/LeetCode/tree/master/0594-longest-harmonious-subsequence) |
 ## Quickselect
 |  |
 | ------- |
@@ -124,6 +128,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0076-minimum-window-substring](https://github.com/dylnhoang/LeetCode/tree/master/0076-minimum-window-substring) |
 | [0424-longest-repeating-character-replacement](https://github.com/dylnhoang/LeetCode/tree/master/0424-longest-repeating-character-replacement) |
 | [0567-permutation-in-string](https://github.com/dylnhoang/LeetCode/tree/master/0567-permutation-in-string) |
+| [0594-longest-harmonious-subsequence](https://github.com/dylnhoang/LeetCode/tree/master/0594-longest-harmonious-subsequence) |
 ## Union Find
 |  |
 | ------- |
