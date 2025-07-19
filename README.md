@@ -17,6 +17,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0153-find-minimum-in-rotated-sorted-array](https://github.com/dylnhoang/LeetCode/tree/master/0153-find-minimum-in-rotated-sorted-array) |
 | [0167-two-sum-ii-input-array-is-sorted](https://github.com/dylnhoang/LeetCode/tree/master/0167-two-sum-ii-input-array-is-sorted) |
 | [0271-encode-and-decode-strings](https://github.com/dylnhoang/LeetCode/tree/master/0271-encode-and-decode-strings) |
+| [0287-find-the-duplicate-number](https://github.com/dylnhoang/LeetCode/tree/master/0287-find-the-duplicate-number) |
 | [0347-top-k-frequent-elements](https://github.com/dylnhoang/LeetCode/tree/master/0347-top-k-frequent-elements) |
 | [0594-longest-harmonious-subsequence](https://github.com/dylnhoang/LeetCode/tree/master/0594-longest-harmonious-subsequence) |
 | [0739-daily-temperatures](https://github.com/dylnhoang/LeetCode/tree/master/0739-daily-temperatures) |
@@ -69,6 +70,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0125-valid-palindrome](https://github.com/dylnhoang/LeetCode/tree/master/0125-valid-palindrome) |
 | [0141-linked-list-cycle](https://github.com/dylnhoang/LeetCode/tree/master/0141-linked-list-cycle) |
 | [0167-two-sum-ii-input-array-is-sorted](https://github.com/dylnhoang/LeetCode/tree/master/0167-two-sum-ii-input-array-is-sorted) |
+| [0287-find-the-duplicate-number](https://github.com/dylnhoang/LeetCode/tree/master/0287-find-the-duplicate-number) |
 | [0567-permutation-in-string](https://github.com/dylnhoang/LeetCode/tree/master/0567-permutation-in-string) |
 ## Divide and Conquer
 |  |
@@ -104,6 +106,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0074-search-a-2d-matrix](https://github.com/dylnhoang/LeetCode/tree/master/0074-search-a-2d-matrix) |
 | [0153-find-minimum-in-rotated-sorted-array](https://github.com/dylnhoang/LeetCode/tree/master/0153-find-minimum-in-rotated-sorted-array) |
 | [0167-two-sum-ii-input-array-is-sorted](https://github.com/dylnhoang/LeetCode/tree/master/0167-two-sum-ii-input-array-is-sorted) |
+| [0287-find-the-duplicate-number](https://github.com/dylnhoang/LeetCode/tree/master/0287-find-the-duplicate-number) |
 | [0792-binary-search](https://github.com/dylnhoang/LeetCode/tree/master/0792-binary-search) |
 | [0907-koko-eating-bananas](https://github.com/dylnhoang/LeetCode/tree/master/0907-koko-eating-bananas) |
 | [1023-time-based-key-value-store](https://github.com/dylnhoang/LeetCode/tree/master/1023-time-based-key-value-store) |
@@ -169,4 +172,8 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0084-largest-rectangle-in-histogram](https://github.com/dylnhoang/LeetCode/tree/master/0084-largest-rectangle-in-histogram) |
 | [0739-daily-temperatures](https://github.com/dylnhoang/LeetCode/tree/master/0739-daily-temperatures) |
 | [0883-car-fleet](https://github.com/dylnhoang/LeetCode/tree/master/0883-car-fleet) |
+## Bit Manipulation
+|  |
+| ------- |
+| [0287-find-the-duplicate-number](https://github.com/dylnhoang/LeetCode/tree/master/0287-find-the-duplicate-number) |
 <!---LeetCode Topics End-->
