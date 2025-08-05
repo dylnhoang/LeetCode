@@ -21,7 +21,7 @@ class WordDictionary(object):
         
 
     def search(self, word):
-
+        
         def dfs(j, node):
             cur = node
 
@@ -37,9 +37,9 @@ class WordDictionary(object):
                     if c not in cur.children:
                         return False
                     cur = cur.children[c]
-                
-            return cur.endOfWord
 
+            return cur.endOfWord
+        
         return dfs(0, self.root)
 
         
