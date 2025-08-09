@@ -24,7 +24,7 @@ class Solution:
 
             return True
 
-        for crs in range(numCourses):
+        for crs, _ in prerequisites:
             if not dfs(crs):
                 return False
         return True
