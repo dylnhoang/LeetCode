@@ -1,21 +1,20 @@
 class Solution:
     def numDecodings(self, s: str) -> int:
-        #dfs + caching
+        #bottom-up dp
 
-        dp = { len(s) : 1 }
+        prevOne = 1 #one step ago, base case
+        prevTwo = 0 #two steps ago
 
-        def dfs(i):
-            if i in dp:
-                return dp[i]
-            if s[i] == "0":
-                return 0
+        for i in range(len(s)):
+            cur = 0
+            #if current number can be part of a valid double digit
+            if i != 0 and s[i - 1 : i + 1] <= "26" and s[i - 1 : i + 1] >= "10": 
+                cur = prevTwo
+            if s[i] != "0": 
+                cur += prevOne
+
+            #step up
+            prevTwo = prevOne 
+            prevOne = cur
         
-            res = dfs(i + 1)
-            if i + 1 < len(s) and (s[i] == "1" or
-                (s[i] == "2" and s[i + 1] in "0123456")):
-                res += dfs(i + 2)
-            
-            dp[i] = res
-            return res
-        
-        return dfs(0)
+        return prevOne
