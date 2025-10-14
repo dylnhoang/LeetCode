@@ -24,6 +24,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0215-kth-largest-element-in-an-array](https://github.com/dylnhoang/LeetCode/tree/master/0215-kth-largest-element-in-an-array) |
 | [0271-encode-and-decode-strings](https://github.com/dylnhoang/LeetCode/tree/master/0271-encode-and-decode-strings) |
 | [0287-find-the-duplicate-number](https://github.com/dylnhoang/LeetCode/tree/master/0287-find-the-duplicate-number) |
+| [0322-coin-change](https://github.com/dylnhoang/LeetCode/tree/master/0322-coin-change) |
 | [0347-top-k-frequent-elements](https://github.com/dylnhoang/LeetCode/tree/master/0347-top-k-frequent-elements) |
 | [0417-pacific-atlantic-water-flow](https://github.com/dylnhoang/LeetCode/tree/master/0417-pacific-atlantic-water-flow) |
 | [0560-subarray-sum-equals-k](https://github.com/dylnhoang/LeetCode/tree/master/0560-subarray-sum-equals-k) |
@@ -224,6 +225,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0091-decode-ways](https://github.com/dylnhoang/LeetCode/tree/master/0091-decode-ways) |
 | [0124-binary-tree-maximum-path-sum](https://github.com/dylnhoang/LeetCode/tree/master/0124-binary-tree-maximum-path-sum) |
 | [0198-house-robber](https://github.com/dylnhoang/LeetCode/tree/master/0198-house-robber) |
+| [0322-coin-change](https://github.com/dylnhoang/LeetCode/tree/master/0322-coin-change) |
 | [0647-palindromic-substrings](https://github.com/dylnhoang/LeetCode/tree/master/0647-palindromic-substrings) |
 | [1013-fibonacci-number](https://github.com/dylnhoang/LeetCode/tree/master/1013-fibonacci-number) |
 ## Backtracking
@@ -297,6 +299,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0226-invert-binary-tree](https://github.com/dylnhoang/LeetCode/tree/master/0226-invert-binary-tree) |
 | [0261-graph-valid-tree](https://github.com/dylnhoang/LeetCode/tree/master/0261-graph-valid-tree) |
 | [0297-serialize-and-deserialize-binary-tree](https://github.com/dylnhoang/LeetCode/tree/master/0297-serialize-and-deserialize-binary-tree) |
+| [0322-coin-change](https://github.com/dylnhoang/LeetCode/tree/master/0322-coin-change) |
 | [0323-number-of-connected-components-in-an-undirected-graph](https://github.com/dylnhoang/LeetCode/tree/master/0323-number-of-connected-components-in-an-undirected-graph) |
 | [0417-pacific-atlantic-water-flow](https://github.com/dylnhoang/LeetCode/tree/master/0417-pacific-atlantic-water-flow) |
 ## Binary Tree
