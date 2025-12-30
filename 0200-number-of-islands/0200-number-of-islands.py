@@ -4,26 +4,20 @@ class Solution:
         visited = set()
         islands = 0
 
-        def bfs(r, c):
-            q = collections.deque()
-            q.append((r, c))
+        def dfs(r, c):
+            if(r < 0 or r >= ROWS or c < 0 or c >= COLS or grid[r][c] == "0" or (r, c) in visited):
+                return
+
             visited.add((r, c))
-
-            directions = [(1, 0), (-1, 0), (0, 1), (0, -1)]
-
-            while q:
-                row, col = q.popleft()
-                for dr, dc in directions:
-                    r, c = row + dr, col + dc
-
-                    if (r in range(ROWS) and c in range(COLS) and grid[r][c] == "1" and (r, c) not in visited):
-                        q.append((r, c))
-                        visited.add((r, c))
-
+            dfs(r + 1, c)
+            dfs(r - 1, c)
+            dfs(r, c + 1)
+            dfs(r, c - 1)
 
         for r in range(ROWS):
             for c in range(COLS):
-                if grid[r][c] == "1" and (r, c) not in visited:
-                    bfs(r, c)
+                if((r, c) not in visited and grid[r][c] == "1"):
+                    dfs(r, c)
                     islands += 1
+        
         return islands
