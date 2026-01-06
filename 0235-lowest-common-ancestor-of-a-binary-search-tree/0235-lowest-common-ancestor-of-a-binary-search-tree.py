@@ -7,6 +7,7 @@
 
 class Solution:
     def lowestCommonAncestor(self, root: 'TreeNode', p: 'TreeNode', q: 'TreeNode') -> 'TreeNode':
+        # we stop and return node if p < node < q or q < node < p bc BST conditions have been met
         cur = root
 
         while cur:
@@ -16,4 +17,3 @@ class Solution:
                 cur = cur.left
             else:
                 return cur
-        
