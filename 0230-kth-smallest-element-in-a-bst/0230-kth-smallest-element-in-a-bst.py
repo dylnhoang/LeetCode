@@ -14,7 +14,7 @@ class Solution:
             while cur:
                 stack.append(cur)
                 cur = cur.left
-            
+
             cur = stack.pop()
             visited += 1
 
