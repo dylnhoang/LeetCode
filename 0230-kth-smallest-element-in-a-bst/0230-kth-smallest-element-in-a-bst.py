@@ -6,20 +6,21 @@
 #         self.right = right
 class Solution:
     def kthSmallest(self, root: Optional[TreeNode], k: int) -> int:
-        #use BFS b/c BFS is in-order traversal
-        visited = 0
         cur = root
         stack = []
+        visited = 0
 
         while cur or stack:
             while cur:
                 stack.append(cur)
                 cur = cur.left
-
+            
             cur = stack.pop()
             visited += 1
 
             if visited == k:
                 return cur.val
-            
+
             cur = cur.right
+            
+            
