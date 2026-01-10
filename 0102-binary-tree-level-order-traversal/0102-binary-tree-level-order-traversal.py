@@ -6,7 +6,6 @@
 #         self.right = right
 class Solution:
     def levelOrder(self, root: Optional[TreeNode]) -> List[List[int]]:
-        # use BFS for inorder traversal
         q = collections.deque()
         q.append(root)
         res = []
@@ -15,16 +14,15 @@ class Solution:
             level = []
             qLen = len(q)
 
-            for i in range(len(q)):
+            for i in range(qLen):
                 node = q.popleft()
 
                 if node:
                     q.append(node.left)
                     q.append(node.right)
                     level.append(node.val)
-                
+            
             if level:
                 res.append(level)
-
+        
         return res
-                
