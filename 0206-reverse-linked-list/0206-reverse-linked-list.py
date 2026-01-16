@@ -11,6 +11,6 @@ class Solution:
             temp = cur.next
             cur.next = prev
             prev = cur
-            cur = temp
+            cur = temp 
 
         return prev
