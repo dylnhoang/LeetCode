@@ -1,15 +1,20 @@
-class Solution(object):
-    def maxArea(self, height):
-        res = 0
-        i, j = 0, len(height) - 1
+class Solution:
+    def maxArea(self, height: List[int]) -> int:
+        # two-pointer method: start l and r at opposite ends and move pointer that points to the lower height
+        # works b/c area = l * h, and l is always going to get smaller, so h is the thing we must up to up area
 
-        while i < j:
-            res = max(res, (j - i) * (min(height[i], height[j])))
+        l, r = 0, len(height) - 1
+        maxArea = 0
 
-            if height[i] < height[j]:
-                i += 1
+        while l < r:
+            leftHeight, rightHeight = height[l], height[r]
+
+            area = min(leftHeight, rightHeight) * (r - l)
+            maxArea = max(area, maxArea)
+
+            if leftHeight < rightHeight:
+                l += 1
             else:
-                j -= 1
+                r -= 1
         
-        return res
-        
+        return maxArea
