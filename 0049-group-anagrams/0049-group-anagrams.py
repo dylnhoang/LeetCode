@@ -1,14 +1,14 @@
-class Solution(object):
-    def groupAnagrams(self, strs):
-        str_hash = defaultdict(list)
+class Solution:
+    def groupAnagrams(self, strs: List[str]) -> List[List[str]]:
+        anagrams = defaultdict(list)
 
         for s in strs:
-            alph_hash = [0] * 26
+            count = [0] * 26
+
             for c in s:
-                alph_hash[ord(c)-ord('a')] += 1
-            str_hash[tuple(alph_hash)].append(s)
+                count[ord(c) - ord('a')] += 1
 
-        return list(str_hash.values())
-        
+            anagrams[tuple(count)].append(s)
 
-        
+        return list(anagrams.values())
+
