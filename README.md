@@ -385,4 +385,8 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0070-climbing-stairs](https://github.com/dylnhoang/LeetCode/tree/master/0070-climbing-stairs) |
 | [0139-word-break](https://github.com/dylnhoang/LeetCode/tree/master/0139-word-break) |
 | [1013-fibonacci-number](https://github.com/dylnhoang/LeetCode/tree/master/1013-fibonacci-number) |
+## Union-Find
+|  |
+| ------- |
+| [0128-longest-consecutive-sequence](https://github.com/dylnhoang/LeetCode/tree/master/0128-longest-consecutive-sequence) |
 <!---LeetCode Topics End-->
