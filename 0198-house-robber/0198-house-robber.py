@@ -1,8 +1,14 @@
-class Solution:
-    def rob(self, nums: List[int]) -> int:
-        rob1, rob2 = 0, 0 # max money 1 house ago, max money 2 houses ago
+class Solution(object):
+    def rob(self, nums):
+        # sub-problem: what is the maximum amount of money you can extract from the last two houses?
+        # thus, problem can be solved using bottom-up DP
+
+        # max money two houses ago, max money one house ago 
+        house2, house1 = 0, 0 # returns 0 if nums is empty
 
         for n in nums:
-            rob1, rob2 = rob2, max(n + rob1, rob2) # advancing; either decide to rob this house or forgo b/c the profits of robbing the house between them is larger
-        
-        return rob2
+            current = max(n + house2, house1) # maximum amount you can get by house n
+            house2 = house1 # iterate, the house that was two houses ago is now only one house ago
+            house1 = current
+
+        return house1 # loop ends after the final house, so the last house is one house ago
