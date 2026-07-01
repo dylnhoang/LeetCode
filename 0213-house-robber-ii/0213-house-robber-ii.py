@@ -1,18 +1,20 @@
 class Solution(object):
     def rob(self, nums):
-        # you can either take the maximum of the houses without the first or without the last, but you cannot include both because they are linked
-        # thus, we propose a soln in which you create a helper function and run it on a portion of the array without the last house, and on a portion of the array without the first house
+        # same premise as house robber, but can't rob both first and last house
+        # thus, we propose a soln in which we split the problem into two cases and choose the maximum
+        #   either you rob the first house and not the last house, or rob the last house and not the first house
+        #   can be done using a helper function that runs house robber 1 code
 
-        return max(nums[0], self.helper(nums[1:]), self.helper(nums[:-1]))
+        return max(nums[0], self.helper(nums[1:]), self.helper(nums[:-1])) # nums[0] handles the edge case where there is only one house in nums
 
     def helper(self, nums):
-        house2, house1 = 0, 0 # max 2 houses ago, max 1 house ago
+        # see house robber for documentation
+        house2, house1 = 0, 0
 
         for n in nums:
-            # calculate current max value
-            current = max(n + house2, house1)
-            house2, house1 = house1, current
-                
-        return house1
+            cur = max(n + house2, house1)
+            house2 = house1
+            house1 = cur
 
-            
+        return house1
+        
