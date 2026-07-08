@@ -1,20 +1,23 @@
 class Solution:
     def numDecodings(self, s: str) -> int:
-        #bottom-up dp
+        # bottom-up DP: the number of decodings at position i are the number of decodings at position (i + 1) and position (i + 2)
 
-        prevOne = 1 #one step ago, base case
-        prevTwo = 0 #two steps ago
+        dp = {len(s) : 1} # there is only one way to decode the last letter of the string
 
-        for i in range(len(s)):
-            cur = 0
-            #if current number can be part of a valid double digit
-            if i != 0 and s[i - 1 : i + 1] <= "26" and s[i - 1 : i + 1] >= "10": 
-                cur = prevTwo
-            if s[i] != "0": 
-                cur += prevOne
+        def dfs(i):
+            if i in dp:
+                return dp[i] # base case 1: we've already explored this possibility (caching for efficiency)
+            if s[i] == "0":
+                return 0 #there's no way to decode a string starting with 0 
+            
+            res = dfs(i + 1)
+            if (i + 1) < len(s) and (s[i] == "1" or 
+                s[i] == "2" and s[i + 1] in "0123456"):
+                res += dfs(i + 2)
 
-            #step up
-            prevTwo = prevOne 
-            prevOne = cur
+            dp[i] = res
+            return res
+
+        return dfs(0)
+
         
-        return prevOne
