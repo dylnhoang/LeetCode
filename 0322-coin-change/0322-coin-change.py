@@ -1,18 +1,19 @@
-class Solution:
-    def coinChange(self, coins: List[int], amount: int) -> int:
-        # bottom-up DP: tabulation
-        # the key idea is that the minimum amount of coins needed to make (amount) is the minimum amount 
-        # to make (amount-coin) for some coin and adding 1 to that amount
+class Solution(object):
+    def coinChange(self, coins, amount):
+        # first thoughts are to use a greedy algo, but this won't work, because that's not how lin combs work
+        # second thoughts are to go through every possible combination of coins in a tree-like fashion. of course, this is suboptimal, because its like n^A where n = len(coins) and A = amount
+        # we notice that we're going to reach a different subamount multiple times on different combinations, turning this into a problem optimized through DP
+        # thus, we propose a soln using bottom-up tabulation, where we tabulate the min comb of coins needed to get increasing amounts so we have them ready for use later
 
-        # thus, we can get a good solution by checking each combination of coins, and optimize this solution by caching the minimum amount of coins it takes to make some number, which will be revisited across different combinations
-
-        dp = [(amount + 1)] * (amount + 1) # the max coins it can take to create amount is amount (b/c the minimum coin value is 1)
-        dp[0] = 0 # base case: it takes 0 coins to make 0
+        # setting up the solution
+        dp = [(amount + 1)] * (amount + 1) # most coins it can teach to make amount is (amount) b/c min value of a coin is 1
+        dp[0] = 0 # base case: you need 0 coins to get 0 
 
         for a in range(1, amount + 1):
             for c in coins:
-                if a - c >= 0:
-                    # either you HAVE the optimal amount, or you can create a new one by choosing a different combination of coins
+                if (a - c) >= 0:
+                    # logic is that you either already have the max, or you can get it from some different min comb of coins (+ 1 b/c you need the current coin c as well)
                     dp[a] = min(dp[a], 1 + dp[a - c]) 
         
-        return dp[amount] if dp[amount] != (amount + 1) else -1 # if dp[amount] == amount + 1 they're no way to reach that value
+        # if dp[amount] has changed then the line (16) above ran, and we can return a valid amount. otherwise, it's not possible to get amount from the coins and we return -1
+        return dp[amount] if dp[amount] != (amount + 1) else -1 
