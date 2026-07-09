@@ -12,7 +12,7 @@ class Solution(object):
             # need to include n because curMin and curMax may both be negative at some point, think [-1, 8]
             curMax = max(curMin * n, curMax * n, n) 
             curMin = min(curMin * n, temp * n, n)
-            res = max(res, curMax)
+            res = max(res, curMax) # need to store res b/c curMax may get reset and be smaller than prev res as you progress through nums
         
         return res
 
