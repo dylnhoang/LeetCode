@@ -1,20 +1,19 @@
-class Solution:
-    def maxProduct(self, nums: List[int]) -> int:
-        # Keep track of current min and max
-        # Min is useful if next number is negative, bc then the greatest min will become the maximum value. 
-        # Max is useful if next number is positive by same logic.
-        # DP approach
+class Solution(object):
+    def maxProduct(self, nums):
+        # this is a DP problem because if we know the previous maximum at a certain point, we know the current maximum at that point
+        # however, we also need to keep track of the previous minimum b/c there are negative numbers involved
+        # bottom-up DP: max subarray at i depends on max subbaray at (i - 1)
 
-        res = max(nums)
+        res = max(nums) # just some filler value for res (can't be 0 b/c max could be negative)
         curMin, curMax = 1, 1
 
         for n in nums:
-            temp = curMin
-            curMin = min(curMin * n, curMax * n, n)
-            curMax = max(temp * n, curMax * n, n) # adding n as a potential current max/min handles a base case in which curMin = curMax and you'd choose n to be your respective min/max
-
-            res = max(curMax, res)
+            temp = curMax
+            # need to include n because curMin and curMax may both be negative at some point, think [-1, 8]
+            curMax = max(curMin * n, curMax * n, n) 
+            curMin = min(curMin * n, temp * n, n)
+            res = max(res, curMax)
         
         return res
 
-
+        
