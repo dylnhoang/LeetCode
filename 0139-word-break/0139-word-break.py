@@ -1,17 +1,17 @@
 class Solution(object):
     def wordBreak(self, s, wordDict):
+        # idea: the validity of a word is defined by the validity of the following string
+        # i.e. we should start from the end of the string to check for words first, because if we can't find words at the end of the string, there's no words in the beginning
 
-        #top-down DP approach, memoization
-
-        dp = [False] * (len(s) + 1) #dp[i] = whether it is possible to create a valid word starting from s[i]
-        dp[len(s)] = True #base case, if the end of the string is reached, it is possible to create a valid word starting from some index
+        dp = [False] * (len(s) + 1) 
+        dp[len(s)] = True # if we reach the end of the string (from the beginning), we know we our string is valid
 
         for i in range(len(s) - 1, -1, -1):
-            for w in wordDict: #check every word in wordDict to see if a word can be formed starting from index i 
-                if ((i + len(w) <= len(s)) and (s[i : i + len(w)] in wordDict)):
-                    dp[i] = dp[i + len(w)] #dp[i] is only possible if dp[i + len(w) is possible
-                if dp[i]:
-                    break #no need to continue going through words if a possible route to a valid word has been found from index i 
+            for w in wordDict:
+                if (i + len(w)) <= len(s) and s[i : i + len(w)] in wordDict:
+                    dp[i] = dp[i + len(w)] # refer to idea
+                    if dp[i]:
+                        break
         
-        return dp[0] #possible if possible from first index 
+        return dp[0]
         
