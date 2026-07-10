@@ -1,14 +1,12 @@
-class Solution:
-    def lengthOfLIS(self, nums: List[int]) -> int:
-        LIS = [1] * len(nums) #LIS[i] = the length of the longest increasing subsequence starting from index i of nums
+class Solution(object):
+    def lengthOfLIS(self, nums):
+        n = len(nums)
+        dp = [1] * (n + 1)
 
-        #top-down DP approach: memoization
-        #iterate i backwards, start j from i + 1 and iterate forwards
-        for i in range(len(nums) - 1, -1, -1):
-            for j in range(i + 1, len(nums)):
-                #if nums[j] is bigger than nums[i], you have found an increasing subsequence
-                #thus we check if the length of the found subsequence (1 + LIS[j]) is larger or smaller than the current LIS[i] value
+        for i in range(n - 1, -1, -1):
+            for j in range(i + 1, n):
                 if nums[j] > nums[i]:
-                    LIS[i] = max(LIS[i], 1 + LIS[j])
+                    dp[i] = max(1 + dp[j], dp[i])
+
+        return max(dp)
         
-        return max(LIS)
