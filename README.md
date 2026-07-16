@@ -83,6 +83,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0567-permutation-in-string](https://github.com/dylnhoang/LeetCode/tree/master/0567-permutation-in-string) |
 | [0647-palindromic-substrings](https://github.com/dylnhoang/LeetCode/tree/master/0647-palindromic-substrings) |
 | [1023-time-based-key-value-store](https://github.com/dylnhoang/LeetCode/tree/master/1023-time-based-key-value-store) |
+| [1143-longest-common-subsequence](https://github.com/dylnhoang/LeetCode/tree/master/1143-longest-common-subsequence) |
 ## Sorting
 |  |
 | ------- |
@@ -252,6 +253,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0322-coin-change](https://github.com/dylnhoang/LeetCode/tree/master/0322-coin-change) |
 | [0647-palindromic-substrings](https://github.com/dylnhoang/LeetCode/tree/master/0647-palindromic-substrings) |
 | [1013-fibonacci-number](https://github.com/dylnhoang/LeetCode/tree/master/1013-fibonacci-number) |
+| [1143-longest-common-subsequence](https://github.com/dylnhoang/LeetCode/tree/master/1143-longest-common-subsequence) |
 ## Backtracking
 |  |
 | ------- |
