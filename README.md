@@ -34,6 +34,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0417-pacific-atlantic-water-flow](https://github.com/dylnhoang/LeetCode/tree/master/0417-pacific-atlantic-water-flow) |
 | [0560-subarray-sum-equals-k](https://github.com/dylnhoang/LeetCode/tree/master/0560-subarray-sum-equals-k) |
 | [0594-longest-harmonious-subsequence](https://github.com/dylnhoang/LeetCode/tree/master/0594-longest-harmonious-subsequence) |
+| [0695-max-area-of-island](https://github.com/dylnhoang/LeetCode/tree/master/0695-max-area-of-island) |
 | [0739-daily-temperatures](https://github.com/dylnhoang/LeetCode/tree/master/0739-daily-temperatures) |
 | [0792-binary-search](https://github.com/dylnhoang/LeetCode/tree/master/0792-binary-search) |
 | [0883-car-fleet](https://github.com/dylnhoang/LeetCode/tree/master/0883-car-fleet) |
@@ -216,6 +217,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0079-word-search](https://github.com/dylnhoang/LeetCode/tree/master/0079-word-search) |
 | [0200-number-of-islands](https://github.com/dylnhoang/LeetCode/tree/master/0200-number-of-islands) |
 | [0417-pacific-atlantic-water-flow](https://github.com/dylnhoang/LeetCode/tree/master/0417-pacific-atlantic-water-flow) |
+| [0695-max-area-of-island](https://github.com/dylnhoang/LeetCode/tree/master/0695-max-area-of-island) |
 ## Sliding Window
 |  |
 | ------- |
@@ -313,6 +315,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0323-number-of-connected-components-in-an-undirected-graph](https://github.com/dylnhoang/LeetCode/tree/master/0323-number-of-connected-components-in-an-undirected-graph) |
 | [0417-pacific-atlantic-water-flow](https://github.com/dylnhoang/LeetCode/tree/master/0417-pacific-atlantic-water-flow) |
 | [0572-subtree-of-another-tree](https://github.com/dylnhoang/LeetCode/tree/master/0572-subtree-of-another-tree) |
+| [0695-max-area-of-island](https://github.com/dylnhoang/LeetCode/tree/master/0695-max-area-of-island) |
 ## Breadth-First Search
 |  |
 | ------- |
@@ -328,6 +331,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0322-coin-change](https://github.com/dylnhoang/LeetCode/tree/master/0322-coin-change) |
 | [0323-number-of-connected-components-in-an-undirected-graph](https://github.com/dylnhoang/LeetCode/tree/master/0323-number-of-connected-components-in-an-undirected-graph) |
 | [0417-pacific-atlantic-water-flow](https://github.com/dylnhoang/LeetCode/tree/master/0417-pacific-atlantic-water-flow) |
+| [0695-max-area-of-island](https://github.com/dylnhoang/LeetCode/tree/master/0695-max-area-of-island) |
 ## Binary Tree
 |  |
 | ------- |
@@ -398,6 +402,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0128-longest-consecutive-sequence](https://github.com/dylnhoang/LeetCode/tree/master/0128-longest-consecutive-sequence) |
+| [0695-max-area-of-island](https://github.com/dylnhoang/LeetCode/tree/master/0695-max-area-of-island) |
 ## Combinatorics
 |  |
 | ------- |
