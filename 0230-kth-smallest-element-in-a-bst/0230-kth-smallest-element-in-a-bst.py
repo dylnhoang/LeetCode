@@ -20,7 +20,7 @@ class Solution:
 
             if visited == k:
                 return cur.val
-
+            
             cur = cur.right
-            
-            
+
+        
