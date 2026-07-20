@@ -8,21 +8,18 @@ class Solution(object):
     def maxPathSum(self, root):
         res = [root.val]
 
-        def dfs(root):
-            if root == None:
+        def dfs(node):
+            if not node:
                 return 0
+            
+            leftMax, rightMax = max(0, dfs(node.left)), max(0, dfs(node.right))
 
-            leftMax = max(0, dfs(root.left))
-            rightMax = max(0, dfs(root.right))
+            res[0] = max(res[0], leftMax + rightMax + node.val)
 
-            #computing split path from current root; leftMax or rightMax will be 0 if negative, so will technically be a oneliner
-            res[0] = max(res[0], root.val + leftMax + rightMax)
-
-            return root.val + max(leftMax, rightMax) #returns best straight line path from root
+            return node.val + max(leftMax, rightMax)
 
         dfs(root)
+
         return res[0]
-
-
 
         
