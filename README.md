@@ -34,6 +34,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0322-coin-change](https://github.com/dylnhoang/LeetCode/tree/master/0322-coin-change) |
 | [0347-top-k-frequent-elements](https://github.com/dylnhoang/LeetCode/tree/master/0347-top-k-frequent-elements) |
 | [0417-pacific-atlantic-water-flow](https://github.com/dylnhoang/LeetCode/tree/master/0417-pacific-atlantic-water-flow) |
+| [0435-non-overlapping-intervals](https://github.com/dylnhoang/LeetCode/tree/master/0435-non-overlapping-intervals) |
 | [0560-subarray-sum-equals-k](https://github.com/dylnhoang/LeetCode/tree/master/0560-subarray-sum-equals-k) |
 | [0594-longest-harmonious-subsequence](https://github.com/dylnhoang/LeetCode/tree/master/0594-longest-harmonious-subsequence) |
 | [0695-max-area-of-island](https://github.com/dylnhoang/LeetCode/tree/master/0695-max-area-of-island) |
@@ -96,6 +97,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0215-kth-largest-element-in-an-array](https://github.com/dylnhoang/LeetCode/tree/master/0215-kth-largest-element-in-an-array) |
 | [0295-find-median-from-data-stream](https://github.com/dylnhoang/LeetCode/tree/master/0295-find-median-from-data-stream) |
 | [0347-top-k-frequent-elements](https://github.com/dylnhoang/LeetCode/tree/master/0347-top-k-frequent-elements) |
+| [0435-non-overlapping-intervals](https://github.com/dylnhoang/LeetCode/tree/master/0435-non-overlapping-intervals) |
 | [0594-longest-harmonious-subsequence](https://github.com/dylnhoang/LeetCode/tree/master/0594-longest-harmonious-subsequence) |
 | [0883-car-fleet](https://github.com/dylnhoang/LeetCode/tree/master/0883-car-fleet) |
 | [1014-k-closest-points-to-origin](https://github.com/dylnhoang/LeetCode/tree/master/1014-k-closest-points-to-origin) |
@@ -241,6 +243,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0011-container-with-most-water](https://github.com/dylnhoang/LeetCode/tree/master/0011-container-with-most-water) |
 | [0055-jump-game](https://github.com/dylnhoang/LeetCode/tree/master/0055-jump-game) |
+| [0435-non-overlapping-intervals](https://github.com/dylnhoang/LeetCode/tree/master/0435-non-overlapping-intervals) |
 ## Dynamic Programming
 |  |
 | ------- |
@@ -258,6 +261,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0213-house-robber-ii](https://github.com/dylnhoang/LeetCode/tree/master/0213-house-robber-ii) |
 | [0300-longest-increasing-subsequence](https://github.com/dylnhoang/LeetCode/tree/master/0300-longest-increasing-subsequence) |
 | [0322-coin-change](https://github.com/dylnhoang/LeetCode/tree/master/0322-coin-change) |
+| [0435-non-overlapping-intervals](https://github.com/dylnhoang/LeetCode/tree/master/0435-non-overlapping-intervals) |
 | [0647-palindromic-substrings](https://github.com/dylnhoang/LeetCode/tree/master/0647-palindromic-substrings) |
 | [1013-fibonacci-number](https://github.com/dylnhoang/LeetCode/tree/master/1013-fibonacci-number) |
 | [1143-longest-common-subsequence](https://github.com/dylnhoang/LeetCode/tree/master/1143-longest-common-subsequence) |
