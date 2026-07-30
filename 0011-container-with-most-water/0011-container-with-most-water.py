@@ -1,20 +1,26 @@
 class Solution:
     def maxArea(self, height: List[int]) -> int:
-        # two-pointer method: start l and r at opposite ends and move pointer that points to the lower height
-        # works b/c area = l * h, and l is always going to get smaller, so h is the thing we must up to up area
+        # two-pointer method: start two pointers at each end and shrink the base length (L) 
+        # since you're shrinking L as you progress, you want to MAXIMIZE the height of the new rectangle (h)
+        # so, at each step, progress only the pointer with the smaller h value as to maximize area
+
+        # note: area = L * min(height1, height2), where L = r - l
 
         l, r = 0, len(height) - 1
         maxArea = 0
 
         while l < r:
-            leftHeight, rightHeight = height[l], height[r]
+            height1, height2 = height[l], height[r]
+            area = (r - l) * min(height1, height2)
+            print(area)
 
-            area = min(leftHeight, rightHeight) * (r - l)
-            maxArea = max(area, maxArea)
+            maxArea = max(maxArea, area)
+            print(maxArea)
 
-            if leftHeight < rightHeight:
+            if height1 < height2:
                 l += 1
             else:
                 r -= 1
-        
+            
         return maxArea
+
