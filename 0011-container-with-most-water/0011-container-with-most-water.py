@@ -12,10 +12,8 @@ class Solution:
         while l < r:
             height1, height2 = height[l], height[r]
             area = (r - l) * min(height1, height2)
-            print(area)
 
             maxArea = max(maxArea, area)
-            print(maxArea)
 
             if height1 < height2:
                 l += 1
