@@ -14,11 +14,13 @@ class Solution:
         def dfs(node):
             if node in oldToCopy:
                 return oldToCopy[node]
-            
-            newNode = Node(node.val)
-            oldToCopy[node] = newNode
+
+            copy = Node(node.val)
+            oldToCopy[node] = copy
+
             for nei in node.neighbors:
-                newNode.neighbors.append(dfs(nei))
-            return newNode
-            
+                copy.neighbors.append(dfs(nei))
+
+            return copy
+
         return dfs(node) if node else None
