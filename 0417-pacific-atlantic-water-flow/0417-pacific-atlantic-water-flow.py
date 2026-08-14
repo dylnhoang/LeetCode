@@ -1,34 +1,30 @@
 class Solution:
     def pacificAtlantic(self, heights: List[List[int]]) -> List[List[int]]:
-        #graph dfs
-
         ROWS, COLS = len(heights), len(heights[0])
         pac, atl = set(), set()
+        dirs = [[0, 1], [0, -1], [1, 0], [-1, 0]]
+        res = []
+
+        # if [r, c] in pac or atl, it can either pacific ocean or atlantic ocean, respectively
+        # go backwards with the condition since we know all borders can reach their respective region: if the prevHeight is greater than the current height, that cell isnt valid
 
         def dfs(r, c, visited, prevHeight):
-            if r not in range(ROWS) or c not in range(COLS) or (r, c) in visited or heights[r][c] < prevHeight:
+            if r < 0 or r >= ROWS or c < 0 or c >= COLS or (r, c) in visited or prevHeight > heights[r][c]:
                 return
             
             visited.add((r, c))
-            curHeight = heights[r][c]
-            dfs(r + 1, c, visited, curHeight)
-            dfs(r - 1, c, visited, curHeight)
-            dfs(r, c + 1, visited, curHeight)
-            dfs(r, c - 1, visited, curHeight)
+            
+            for dr, dc in dirs:
+                dfs(r + dr, c + dc, visited, heights[r][c])
 
-
-        #left and right
         for c in range(COLS):
-            dfs(0, c, pac, 0)
-            dfs(ROWS - 1, c, atl, 0)
+            dfs(0, c, pac, heights[0][c])
+            dfs(ROWS - 1, c, atl, heights[ROWS - 1][c])
 
-        #top and bottom
         for r in range(ROWS):
-            dfs(r, 0, pac, 0)
-            dfs(r, COLS - 1, atl, 0)
-
-        #check if each grid in matrix is in both sets
-        res = []
+            dfs(r, 0, pac, heights[r][0])
+            dfs(r, COLS - 1, atl, heights[r][COLS - 1])
+        
         for r in range(ROWS):
             for c in range(COLS):
                 if (r, c) in pac and (r, c) in atl:
